@@ -89,26 +89,6 @@ The **CAN stack** (via `canlib2.c` and `can_device.c`) supports:
 
 ---
 
-## Build and Deployment
-
-### Requirements
-- **STM32CubeIDE** or **Makefile-based build system**
-- **STM32 HAL library**
-- Hardware: STM32H5xx MCU or compatible board
-- Optional: CAN transceiver and connected nodes for distributed testing
-
-### Building
-1. Import project into STM32CubeIDE or copy source into an existing HAL project.
-2. Ensure all required GPIO, FDCAN, and timer peripherals are initialized in CubeMX.
-3. Build and flash the firmware.
-
-### Running
-- Power up the MCU and ensure CAN lines are terminated properly.
-- Observe periodic output toggling and diagnostics via CAN messages.
-- Modify IOCTL calls to control devices dynamically through software or remote commands.
-
----
-
 ## Extending the System
 
 To add a new device:
